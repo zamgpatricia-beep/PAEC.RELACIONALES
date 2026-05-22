@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+
+{% block title %}Química del Cuerpo Humano - App PAEC{% endblock %}
+
+{% block contenido %}
+<div class="container py-4">
+    <header class="text-center mb-3">
+        <h1 class="display-5 fw-bold text-pink-900">Así funciona tu cuerpo...</h1>
+    </header>
+
+    <section class="mb-4 p-3 bg-green-100 border border-green-300">
+        <div class="mb-3">
+            <h2 class="h4 fw-bold text-pink-900 mb-0">1. Digestión de Alimentos (¿Cómo absorbemos los nutrientes?)</h2>
+        </div>
+        
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="card h-100 border border-green-300 bg-green-200 text-white">
+                    <div class="card-body p-3">
+                        <h3 class="h5 fw-bold mb-2">Carbohidratos</h3>
+                        <p class="card-text small lh-sm mb-0">
+                            Se rompen en monosacáridos (como la glucosa) desde la boca hasta el intestino delgado. 
+                            La insulina ayuda a que las células los usen como energía.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border border-green-200 bg-green-300 text-pink-900">
+                    <div class="card-body p-3">
+                        <h3 class="h5 fw-bold mb-2">Proteínas</h3>
+                        <p class="card-text small lh-sm mb-0">
+                            El estómago las desnaturaliza con ácido y la pepsina las corta. 
+                            El intestino termina de romperlas en aminoácidos para construir tejidos. El desecho se va como urea.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border border-pink-900 bg-pink-200 text-pink-900">
+                    <div class="card-body p-3">
+                        <h3 class="h5 fw-bold mb-2">Lípidos (Grasas)</h3>
+                        <p class="card-text small lh-sm mb-0">
+                            Como no se mezclan con agua, la bilis las disuelve en gotas pequeñas y la lipasa las rompe. 
+                            Se absorben y viajan por la linfa y la sangre en forma de quilomicrones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-4 p-3 bg-teal-100 border border-teal-200">
+        <div class="mb-3">
+            <h2 class="h4 fw-bold text-pink-900 mb-0">2. Respiración Celular (¿Cómo fabricamos energía?)</h2>
+        </div>
+
+        <div class="row g-3">
+            <!-- Glucólisis -->
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 border border-pink-200 bg-pink-100 text-pink-900 text-center">
+                    <div class="card-body p-3">
+                        <div class="badge bg-pink-900 text-white rounded-circle px-2 py-1 mb-2">01</div>
+                        <h4 class="h6 fw-bold mb-1">Glucólisis</h4>
+                        <p class="card-text small mb-0">Rompe la glucosa en el citoplasma (da 2 ATP).</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Acetil-CoA -->
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 border border-green-300 bg-green-200 text-white text-center">
+                    <div class="card-body p-3">
+                        <div class="badge bg-white text-green-200 rounded-circle px-2 py-1 mb-2">02</div>
+                        <h4 class="h6 fw-bold mb-1">Acetil-CoA</h4>
+                        <p class="card-text small mb-0">El desecho entra a la mitocondria y se prepara.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 border border-green-200 bg-green-300 text-pink-900 text-center">
+                    <div class="card-body p-3">
+                        <div class="badge bg-pink-900 text-white rounded-circle px-2 py-1 mb-2">03</div>
+                        <h4 class="h6 fw-bold mb-1">Ciclo de Krebs</h4>
+                        <p class="card-text small mb-0">Descompone todo el combustible y genera cargadores de energía (NADH/FADH_2).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 border border-pink-900 bg-pink-200 text-pink-900 text-center">
+                    <div class="card-body p-3">
+                        <div class="badge bg-pink-900 text-white rounded-circle px-2 py-1 mb-2">04</div>
+                        <h4 class="h6 fw-bold mb-1">Fosforilación</h4>
+                        <p class="card-text small mb-0">Usa oxígeno para activar la máquina (ATP sintasa) que fabrica la mayor parte del ATP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-3 bg-pink-100 border border-pink-200 mb-2">
+        <div class="mb-3">
+            <h2 class="h4 fw-bold text-pink-900 mb-0">3. Hormonas y Neurotransmisores (Los mensajeros químicos)</h2>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="card h-100 border border-green-300 bg-green-200 text-white">
+                    <div class="card-body p-3">
+                        <h3 class="h5 fw-bold mb-1">Melatonina</h3>
+                        <p class="card-text small mb-0">Se hace de noche a partir del triptófano. Regula el sueño y es antioxidante.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 border border-pink-900 bg-pink-200 text-pink-900">
+                    <div class="card-body p-3">
+                        <h3 class="h5 fw-bold mb-1">Serotonina</h3>
+                        <p class="card-text small mb-0">Se produce en el intestino (del triptófano). Regula el ánimo, la felicidad y el apetito.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 border border-green-200 bg-green-300 text-pink-900">
+                    <div class="card-body p-3">
+                        <h3 class="h5 fw-bold mb-1">Dopamina</h3>
+                        <p class="card-text small mb-0">Se produce en las neuronas (de la tirosina). Controla el placer, la motivación y el movimiento.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 border border-green-300 bg-green-200 text-white">
+                    <div class="card-body p-3">
+                        <h3 class="h5 fw-bold mb-1">Insulina</h3>
+                        <p class="card-text small mb-0">Producida por el páncreas. Baja el azúcar en sangre metiéndola a las células. Si falla, causa diabetes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

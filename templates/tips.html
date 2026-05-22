@@ -1,0 +1,237 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio - App PAEC{% endblock %}
+
+{% block contenido %}
+<div class="container my-5">
+    
+    <div class="card text-white overflow-hidden mb-5 border-0 rounded-4">
+        <img src="/static/css/img/banner.jpg" class="card-img" alt="Imagen de fondo" style="object-fit: cover; height: 280px;">
+        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+            <div class="bg-pink-100 px-4 py-3 rounded-4 text-center">
+                <h1 class="card-title fw-bold display-4 text-pink-900 m-0">Lleva una vida más saludable</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-pink-100 text-center py-2 mb-4 rounded-3">
+        <h3>⋆·˚ ༘ *Recomendaciones segun tu imc ⋆·˚ ༘ *</h3>
+    </div>
+
+    <div class="row g-3 justify-content-center">
+        
+        <div class="col-md-4 col-sm-6 text-center">
+            <button type="button" class="btn bg-pink-200 text-pink-900 fw-bold w-100 py-3 rounded-4 border-0" data-bs-toggle="modal" data-bs-target="#modal1">
+                Bajo peso
+            </button>
+        </div>
+
+        <div class="col-md-4 col-sm-6 text-center">
+            <button type="button" class="btn bg-pink-200 text-pink-900 fw-bold w-100 py-3 rounded-4 border-0" data-bs-toggle="modal" data-bs-target="#modal2">
+                Peso normal
+            </button>
+        </div>
+
+        <div class="col-md-4 col-sm-6 text-center">
+            <button type="button" class="btn bg-pink-200 text-pink-900 fw-bold w-100 py-3 rounded-4 border-0" data-bs-toggle="modal" data-bs-target="#modal3">
+                Sobrepeso
+            </button>
+        </div>
+
+        <div class="col-md-4 col-sm-6 text-center">
+            <button type="button" class="btn bg-pink-200 text-pink-900 fw-bold w-100 py-3 rounded-4 border-0" data-bs-toggle="modal" data-bs-target="#modal4">
+                Obesidad Grado I
+            </button>
+        </div>
+
+        <div class="col-md-4 col-sm-6 text-center">
+            <button type="button" class="btn bg-pink-200 text-pink-900 fw-bold w-100 py-3 rounded-4 border-0" data-bs-toggle="modal" data-bs-target="#modal5">
+                Obesidad Grado II
+            </button>
+        </div>
+
+        <div class="col-md-4 col-sm-6 text-center">
+            <button type="button" class="btn bg-pink-200 text-pink-900 fw-bold w-100 py-3 rounded-4 border-0" data-bs-toggle="modal" data-bs-target="#modal6">
+                Obesidad Grado III
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- Modal 1: Bajo Peso -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="labelModal1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-pink-100 border-0 rounded-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold text-pink-900" id="labelModal1">Menor de 18.5 (Bajo peso)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-pink-950">
+                    <ul class="ps-3 m-0">
+                        <li class="mb-2">Comer alimentos calóricos y sanos como frutos secos, aguacate y aceites.</li>
+                        <li class="mb-2">Hacer entre 5 y 6 comidas pequeñas al día.</li>
+                        <li class="mb-2">Priorizar ejercicios de fuerza para ganar masa muscular.</li>
+                        <li class="mb-2">Reducir el ejercicio cardiovascular intenso.</li>
+                        <li class="mb-2">Consultar al médico para descartar deficiencias o problemas digestivos.</li>
+                    </ul>
+                    <hr class="text-pink-200">
+                    <div class="text-center my-2">
+                        <a href="http://www.youtube.com/watch?v=X8G4P2A5vnY" target="_blank" class="text-pink-900 fw-bold text-decoration-none"><i class="bi bi-youtube text-danger"></i> Ver video: Cómo aumentar de peso y ganar masa muscular</a>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn bg-pink-200 text-pink-900 fw-bold rounded-4" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Peso Normal -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="labelModal2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-pink-100 border-0 rounded-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold text-pink-900" id="labelModal2">18.5 – 24.9 (Peso normal)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-pink-950">
+                    <ul class="ps-3 m-0">
+                        <li class="mb-2">Llevar una dieta equilibrada con proteínas, verduras y grasas sanas.</li>
+                        <li class="mb-2">Evitar al máximo los productos ultraprocesados.</li>
+                        <li class="mb-2">Combinar rutinas de fuerza y cardio 3 o 4 veces por semana.</li>
+                        <li class="mb-2">Mantener una buena hidratación tomando agua diariamente.</li>
+                        <li class="mb-2">Dormir entre 7 y 8 horas cada noche para recuperarse bien.</li>
+                    </ul>
+                    <hr class="text-pink-200">
+                    <div class="text-center my-2">
+                        <a href="http://www.youtube.com/watch?v=YWGOThGG8-Y" target="_blank" class="text-pink-900 fw-bold text-decoration-none"><i class="bi bi-youtube text-danger"></i> Ver video: Hábitos saludables y cómo cuidarte</a>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn bg-pink-200 text-pink-900 fw-bold rounded-4" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Sobrepeso -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="labelModal3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-pink-100 border-0 rounded-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold text-pink-900" id="labelModal3">25.0 – 29.9 (Sobrepeso)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-pink-950">
+                    <ul class="ps-3 m-0">
+                        <li class="mb-2">Reducir harinas refinadas, azúcares y bebidas dulces.</li>
+                        <li class="mb-2">Comer más fibra como verduras y legumbres para dar saciedad.</li>
+                        <li class="mb-2">Hacer 150 minutos semanales de ejercicio moderado como caminar rápido o bicicleta.</li>
+                        <li class="mb-2">Entrenar fuerza 2 o 3 veces por semana para quemar grasa y mantener músculo.</li>
+                        <li class="mb-2">Cuidar el tamaño de las porciones y evitar picar entre comidas.</li>
+                    </ul>
+                    <hr class="text-pink-200">
+                    <div class="text-center my-2">
+                        <a href="http://www.youtube.com/watch?v=fvnSnPEb6xM" target="_blank" class="text-pink-900 fw-bold text-decoration-none"><i class="bi bi-youtube text-danger"></i> Ver video: Técnicas eficientes para bajar de peso</a>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn bg-pink-200 text-pink-900 fw-bold rounded-4" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Obesidad Grado I -->
+    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="labelModal4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-pink-100 border-0 rounded-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold text-pink-900" id="labelModal4">30.0 – 34.9 (Obesidad Grado I)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-pink-950">
+                    <ul class="ps-3 m-0">
+                        <li class="mb-2">Seguir un plan de alimentación estructurado y controlar porciones.</li>
+                        <li class="mb-2">Hacer ejercicio de bajo impacto como natación o elíptica para cuidar articulaciones.</li>
+                        <li class="mb-2">Sumar ejercicios de fuerza adaptados a tu condición.</li>
+                        <li class="mb-2">Revisar seguido la presión, glucosa y colesterol con un médico.</li>
+                        <li class="mb-2">Buscar metas de pérdida de peso bajas y constantes, sin prisas.</li>
+                    </ul>
+                    <hr class="text-pink-200">
+                    <div class="text-center my-2">
+                        <a href="http://www.youtube.com/watch?v=FRR6I0Ptwto" target="_blank" class="text-pink-900 fw-bold text-decoration-none"><i class="bi bi-youtube text-danger"></i> Ver video: Perder peso de forma segura con Obesidad Grado 1</a>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn bg-pink-200 text-pink-900 fw-bold rounded-4" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Obesidad Grado II -->
+    <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="labelModal5" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-pink-100 border-0 rounded-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold text-pink-900" id="labelModal5">35.0 – 39.9 (Obesidad Grado II)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-pink-950">
+                    <ul class="ps-3 m-0">
+                        <li class="mb-2">Buscar asesoría con un nutriólogo para recortar calorías de forma segura.</li>
+                        <li class="mb-2">Hacer solo ejercicio adaptado que no lastime rodillas ni espalda.</li>
+                        <li class="mb-2">Elegir actividades en el agua como acuaeróbics para no cargar todo el peso.</li>
+                        <li class="mb-2">Apoyarse en psicología para manejar la ansiedad por comer.</li>
+                        <li class="mb-2">Llevar un control médico estricto para prevenir enfermedades crónicas.</li>
+                    </ul>
+                    <hr class="text-pink-200">
+                    <div class="text-center my-2">
+                        <a href="http://www.youtube.com/watch?v=CIlHI5-tw10" target="_blank" class="text-pink-900 fw-bold text-decoration-none"><i class="bi bi-youtube text-danger"></i> Ver video: Ejercicios recomendados y contraindicados en obesidad</a>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn bg-pink-200 text-pink-900 fw-bold rounded-4" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Obesidad Grado III -->
+    <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="labelModal6" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content bg-pink-100 border-0 rounded-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold text-pink-900" id="labelModal6">40.0 o más (Obesidad Grado III)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-pink-950">
+                    <ul class="ps-3 m-0">
+                        <li class="mb-2">Acudir con un equipo médico y de nutrición especializado.</li>
+                        <li class="mb-2">Enfocar la dieta en desinflamar el cuerpo y regular el azúcar.</li>
+                        <li class="mb-2">Iniciar con movilidad básica guiada por un fisioterapeuta.</li>
+                        <li class="mb-2">Prohibir ejercicios de impacto que dañen los huesos o articulaciones.</li>
+                        <li class="mb-2">Evaluar con especialistas opciones como medicamentos o cirugía bariátrica.</li>
+                    </ul>
+                    <hr class="text-pink-200">
+                    <div class="text-center my-2">
+                        <a href="http://www.youtube.com/watch?v=P-ZHR7Ii8CY" target="_blank" class="text-pink-900 fw-bold text-decoration-none"><i class="bi bi-youtube text-danger"></i> Ver video: Tratamientos avanzados y vida post-cirugía bariátrica</a>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn bg-pink-200 text-pink-900 fw-bold rounded-4" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="text-center my-5">
+    <a href="{{ url_for('calcular_imc') }}" class="btn bg-pink-900 text-white py-2.5 px-4 rounded-pill fw-bold shadow-sm">
+        <i class="bi bi-calculator me-1"></i> Regresar a la Calculadora
+    </a>
+</div>
+{% endblock %}

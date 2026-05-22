@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio - App PAEC{% endblock %}
+
+{% block contenido %}
+<div class="container my-5">
+    
+    <div class="p-4 mb-5 bg-green-100 rounded-4 shadow-sm bg-teal-100">
+        <h1 class="display-3 fw-bold text-pink-900 text-center mb-0">𓇼 ⋆.˚ 𓆉 Cambia tus habitos hoy 𓇼 ⋆.˚ 𓆉</h1>
+    </div>
+
+    <div class="text-center mb-5 max-width-700 mx-auto">
+        <h4 class="mb-3 lh-base">¿Te falta energía y no sabes por qué? Ese cansancio diario suele ser el resultado directo de tus 
+          hábitos cotidianos. No te conformes con vivir agotado: 
+          ¡conoce más y transforma tu día a día!</h4>
+    </div>
+
+    <div class="mb-5 py-3">
+        <h3 class="text-center mb-4 text-pink-900">‧₊ ᵎᵎ 🍒 ⋅ ˚✮Objetivos‧₊ ᵎᵎ 🍒 ⋅ ˚✮</h3>
+        <div class="row text-center">
+            
+            <div class="col-md-4 mb-4">
+                <div class="bg-pink-100 p-4 rounded-4 h-100 shadow-sm">
+                    <h5 class="text-pink-900 mb-3"><i class="bi bi-search me-1"></i> Descubre tus raices</h5>
+                    <p class="mb-0 text-muted">Aprende de donde vienen tus habitos alimenticios y de descanso.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="bg-pink-100 p-4 rounded-4 h-100 shadow-sm">
+                    <h5 class="text-pink-900 mb-3"><i class="bi bi-heart-pulse me-1"></i> Conoce tu estado de salud</h5>
+                    <p class="mb-0 text-muted">Descubre cual es tu imc y encuentra recommendations para ti.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="bg-pink-100 p-4 rounded-4 h-100 shadow-sm">
+                    <h5 class="text-pink-900 mb-3"><i class="bi bi-activity me-1"></i> Entiende tu cuerpo</h5>
+                    <p class="mb-0 text-muted">Descubre cómo funcionan tus procesos metabólicos y de descanso.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row align-items-center mb-5 bg-pink-100 p-4 rounded-4 shadow-sm">
+        <div class="col-md-6 mb-3 mb-md-0">
+            <img src="{{ url_for('static', filename='css/img/manzanitas.jpg') }}" class="img-fluid rounded-3" alt="Imagen Química">
+        </div>
+        <div class="col-md-6">
+            <h5 class="lh-base">Este es el momento para entender tu cuerpo, saber sus funcionameintos y entenderlo a fondo, ya que solo asi podras saber de donde viene tu energia, tu cansancio o incluso tus antojos y que puedes hacer para mejorar tu calidad de vida.</h5>
+            <a href="{{ url_for('quimica') }}" class="btn bg-pink-900 text-white rounded-pill px-4 py-2 mt-3 shadow-sm text-decoration-none d-inline-block">
+                Conocer más <i class="bi bi-arrow-right short ms-1"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="row align-items-center mb-5 py-3">
+        <div class="col-md-6 order-2 order-md-2">
+            <img src="{{ url_for('static', filename='css/img/tostadas.jpg') }}" class="img-fluid rounded-3" alt="Imagen Historia">
+        </div>
+        <div class="col-md-6 order-1 order-md-1 mb-3 mb-md-0 pe-md-4">
+            <h5 class="lh-base">Tus habitos alimenticios tienen un origen, conoce como tu alimentacion se vio afectada por tu entorno y tus raices, desde tiempos prehispanicos nuestra forma de vivir era incluso mas saludable de lo que es ahora.</h5>
+            <a href="{{ url_for('historia') }}" class="btn bg-pink-900 text-white rounded-pill px-4 py-2 mt-3 shadow-sm text-decoration-none d-inline-block">
+                Ver detalles <i class="bi bi-arrow-right short ms-1"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="mb-5 py-4">
+        <h3 class="text-center mb-4 text-pink-900">𓏲 ₊˚Tus habitos tambien afectan tu rendimiento escolar ₊˚</h3>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="p-3 bg-white border border-green-300 rounded-3 d-flex align-items-center">
+                    <i class="bi bi-lightning-charge-fill text-green-200 fs-2 me-3"></i>
+                    <div>
+                        <h6 class="mb-1 fw-bold text-pink-900">Tu alimentacion afecta como te sientes durante clases: un cerebro con hambre no piensa correctamente</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-3 bg-white border border-green-300 rounded-3 d-flex align-items-center">
+                    <i class="bi bi-moon-stars-fill text-green-200 fs-2 me-3"></i>
+                    <div>
+                        <h6 class="mb-1 fw-bold text-pink-900">Dormir bien mejora tu concentración, desvelarte para estudiar hace lo contrario</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center my-5 py-4 bg-green-100 rounded-4">
+        <h2 class="mb-4 text-pink-900 fw-bold">¿Listo para comenzar el cambio? Calcula tu imc</h2>
+        <a href="{{ url_for('calcular_imc') }}" class="btn bg-green-200 text-white rounded-pill px-5 py-3 fw-semibold shadow-sm fs-5 text-decoration-none">
+            ¡Calcula aqui!
+        </a>
+    </div>
+</div>
+{% endblock %}
