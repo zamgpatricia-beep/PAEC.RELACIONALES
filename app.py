@@ -74,10 +74,10 @@ def calcular_imc():
                     imagen_resultado = "css/img/cuerpo_obesidad.jpg"
                 elif 35.0 <= imc_redondeado <= 39.9:
                     clasificacion = "Obesidad grado II"
-                    imagen_resultado = "css/img/cuerpo_obesidad.jpg"
+                    imagen_resultado = "css/img/cuerpo_obesidad2.jpg"
                 else: 
                     clasificacion = "Obesidad grado III (mórbida)"
-                    imagen_resultado = "css/img/cuerpo_obesidad.jpg"
+                    imagen_resultado = "css/img/cuerpo_obesidad3.jpg"
 
                 resultado = f"Tu IMC es {imc_redondeado} ({clasificacion})."
                 nota = "NOTA: El IMC es una medida de referencia, no sustituye un diagnóstico médico."
