@@ -3,6 +3,10 @@ import sqlite3
 
 app = Flask(__name__)
 
+app.route('/porcentiles')
+def porcentiles():
+    return render_template('menor.html')
+
 @app.route('/quimica')
 def quimica():
     return render_template('quimica.html')
