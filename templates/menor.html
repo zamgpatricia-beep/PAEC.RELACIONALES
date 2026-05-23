@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}Percentiles de Crecimiento - App PAEC{% endblock %}
+
+{% block contenido %}
+<div class="container text-center py-5">
+    
+    <h1 class="display-4 fw-bold text-pink-900 mb-2">Tabla de Percentiles de Crecimiento</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-10">
+            <div class="card bg-pink-100 border-0 rounded-4">
+                <div class="card-body p-4 text-start">
+                    
+                    <h3 class="card-title text-pink-900 mb-3 fw-semibold text-center">Parámetros por Edad y Sexo</h3>
+                    <p class="card-text text-dark mb-4 text-center small">
+                        Valores correspondientes a los percentiles 15 (Límite Inferior), 50 (Mediana) y 85 (Límite Superior) para tomarlo en cuenta a la hora de realizar tu calculo de imc.
+                    </p>
+
+                    <div class="table-responsive bg-white rounded-3 shadow-sm p-2">
+                        <table class="table table-hover table-striped align-middle mb-0 text-center">
+                            <thead class="table-dark" style="background-color: #880e4f;">
+                                <tr>
+                                    <th rowspan="2" class="align-middle">Edad / Sexo</th>
+                                    <th colspan="3" class="table-danger text-dark fw-bold">Peso (kg)</th>
+                                    <th colspan="3" class="table-success text-dark fw-bold">Talla (cm)</th>
+                                </tr>
+                                <tr>
+                                    <th class="small">P15 <br><span class="text-muted fw-normal" style="font-size: 0.75rem;">(Bajo)</span></th>
+                                    <th class="small">P50 <br><span class="text-muted fw-normal" style="font-size: 0.75rem;">(Mediana)</span></th>
+                                    <th class="small">P85 <br><span class="text-muted fw-normal" style="font-size: 0.75rem;">(Alto)</span></th>
+                                    <th class="small">P15 <br><span class="text-muted fw-normal" style="font-size: 0.75rem;">(Baja)</span></th>
+                                    <th class="small">P50 <br><span class="text-muted fw-normal" style="font-size: 0.75rem;">(Mediana)</span></th>
+                                    <th class="small">P85 <br><span class="text-muted fw-normal" style="font-size: 0.75rem;">(Alta)</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Masculino (3 m)</td><td>5.0</td><td>6.4</td><td>8.0</td><td>57.3</td><td>61.4</td><td>65.5</td></tr>
+                                <tr><td>Femenino (3 m)</td><td>4.6</td><td>5.8</td><td>7.5</td><td>55.6</td><td>59.8</td><td>64.0</td></tr>
+                                <tr><td>Masculino (6 m)</td><td>6.4</td><td>7.9</td><td>9.8</td><td>63.3</td><td>67.6</td><td>71.9</td></tr>
+                                <tr><td>Femenino (6 m)</td><td>5.8</td><td>7.3</td><td>9.2</td><td>61.2</td><td>65.7</td><td>70.3</td></tr>
+                                <tr><td>Masculino (9 m)</td><td>7.1</td><td>8.9</td><td>11.0</td><td>67.5</td><td>72.0</td><td>76.5</td></tr>
+                                <tr><td>Femenino (9 m)</td><td>6.5</td><td>8.2</td><td>10.4</td><td>65.3</td><td>70.1</td><td>75.0</td></tr>
+                                <tr><td>Masculino (1 año)</td><td>7.8</td><td>9.6</td><td>11.8</td><td>71.0</td><td>75.7</td><td>80.5</td></tr>
+                                <tr><td>Femenino (1 año)</td><td>7.1</td><td>8.9</td><td>11.1</td><td>69.2</td><td>74.0</td><td>78.9</td></tr>
+                                
+                                <tr><td>Masculino (15 m)</td><td>8.3</td><td>10.3</td><td>12.7</td><td>74.1</td><td>79.1</td><td>84.1</td></tr>
+                                <tr><td>Femenino (15 m)</td><td>7.6</td><td>9.5</td><td>11.9</td><td>72.2</td><td>77.5</td><td>82.7</td></tr>
+                                <tr><td>Masculino (18 m)</td><td>8.8</td><td>10.9</td><td>13.5</td><td>76.9</td><td>82.3</td><td>87.7</td></tr>
+                                <tr><td>Femenino (18 m)</td><td>8.1</td><td>10.2</td><td>12.7</td><td>74.9</td><td>80.7</td><td>86.5</td></tr>
+                                
+                                <tr><td>Masculino (2 años)</td><td>9.7</td><td>12.2</td><td>15.3</td><td>81.7</td><td>87.8</td><td>93.9</td></tr>
+                                <tr><td>Femenino (2 años)</td><td>9.0</td><td>11.5</td><td>14.6</td><td>80.0</td><td>86.4</td><td>92.9</td></tr>
+                                <tr><td>Masculino (3 años)</td><td>11.3</td><td>14.3</td><td>18.3</td><td>88.7</td><td>96.1</td><td>103.5</td></tr>
+                                <tr><td>Femenino (3 años)</td><td>10.8</td><td>13.9</td><td>18.1</td><td>87.4</td><td>95.1</td><td>102.7</td></tr>
+                                <tr><td>Masculino (4 años)</td><td>12.7</td><td>16.3</td><td>21.2</td><td>94.9</td><td>103.3</td><td>111.7</td></tr>
+                                <tr><td>Femenino (4 años)</td><td>12.3</td><td>16.1</td><td>21.5</td><td>94.1</td><td>102.7</td><td>111.3</td></tr>
+                                <tr><td>Masculino (5 años)</td><td>14.1</td><td>18.3</td><td>24.2</td><td>100.7</td><td>110.0</td><td>119.2</td></tr>
+                                <tr><td>Femenino (5 años)</td><td>13.7</td><td>18.2</td><td>24.9</td><td>100.0</td><td>109.4</td><td>118.9</td></tr>
+                                
+                                <tr><td>Masculino (6 años)</td><td>15.9</td><td>20.5</td><td>27.1</td><td>106.1</td><td>116.0</td><td>125.8</td></tr>
+                                <tr><td>Femenino (6 años)</td><td>15.3</td><td>20.2</td><td>27.8</td><td>104.9</td><td>115.1</td><td>125.4</td></tr>
+                                <tr><td>Masculino (7 años)</td><td>17.7</td><td>22.9</td><td>30.7</td><td>111.2</td><td>121.7</td><td>132.2</td></tr>
+                                <tr><td>Femenino (7 años)</td><td>17.0</td><td>22.8</td><td>32.2</td><td>110.0</td><td>120.8</td><td>131.7</td></tr>
+                                <tr><td>Masculino (8 años)</td><td>19.7</td><td>25.6</td><td>35.0</td><td>116.0</td><td>127.3</td><td>138.6</td></tr>
+                                <tr><td>Femenino (8 años)</td><td>19.1</td><td>25.8</td><td>37.1</td><td>115.0</td><td>126.4</td><td>138.0</td></tr>
+                                <tr><td>Masculino (9 años)</td><td>21.9</td><td>28.6</td><td>40.1</td><td>120.5</td><td>132.6</td><td>144.8</td></tr>
+                                <tr><td>Femenino (9 años)</td><td>21.4</td><td>29.1</td><td>42.7</td><td>120.3</td><td>132.5</td><td>144.7</td></tr>
+                                
+                                <tr><td>Masculino (10 años)</td><td>24.3</td><td>32.0</td><td>45.9</td><td>125.0</td><td>137.8</td><td>150.7</td></tr>
+                                <tr><td>Femenino (10 años)</td><td>24.1</td><td>32.9</td><td>48.8</td><td>125.8</td><td>138.6</td><td>151.5</td></tr>
+                                <tr><td>Masculino (11 años)</td><td>27.1</td><td>35.7</td><td>52.2</td><td>129.5</td><td>143.1</td><td>156.6</td></tr>
+                                <tr><td>Femenino (11 años)</td><td>27.3</td><td>37.2</td><td>55.3</td><td>131.5</td><td>144.9</td><td>158.3</td></tr>
+                                <tr><td>Masculino (12 años)</td><td>30.3</td><td>39.9</td><td>58.8</td><td>134.3</td><td>148.5</td><td>162.8</td></tr>
+                                <tr><td>Femenino (12 años)</td><td>31.0</td><td>41.9</td><td>61.7</td><td>137.1</td><td>150.9</td><td>164.7</td></tr>
+                                <tr><td>Masculino (13 años)</td><td>31.5</td><td>40.9</td><td>56.3</td><td>140.3</td><td>151.3</td><td>162.3</td></tr>
+                                <tr><td>Femenino (13 años)</td><td>35.1</td><td>46.7</td><td>66.3</td><td>142.0</td><td>155.7</td><td>169.3</td></tr>
+                                <tr><td>Masculino (14 años)</td><td>35.7</td><td>46.6</td><td>62.1</td><td>146.8</td><td>158.4</td><td>169.8</td></tr>
+                                <tr><td>Femenino (14 años)</td><td>39.1</td><td>50.9</td><td>69.4</td><td>145.7</td><td>158.7</td><td>171.6</td></tr>
+                                
+                                <tr><td>Masculino (15 años)</td><td>40.7</td><td>51.9</td><td>66.9</td><td>154.7</td><td>164.7</td><td>174.9</td></tr>
+                                <tr><td>Femenino (15 años)</td><td>42.4</td><td>53.8</td><td>71.5</td><td>147.9</td><td>160.5</td><td>173.1</td></tr>
+                                <tr><td>Masculino (16 años)</td><td>45.3</td><td>55.9</td><td>70.3</td><td>159.3</td><td>168.3</td><td>177.4</td></tr>
+                                <tr><td>Femenino (16 años)</td><td>44.7</td><td>55.3</td><td>72.4</td><td>149.0</td><td>161.4</td><td>173.9</td></tr>
+                                <tr><td>Masculino (17 años)</td><td>48.6</td><td>58.6</td><td>72.5</td><td>161.7</td><td>170.1</td><td>178.5</td></tr>
+                                <tr><td>Femenino (17 años)</td><td>46.1</td><td>56.2</td><td>72.9</td><td>149.5</td><td>161.9</td><td>174.2</td></tr>
+                                <tr><td>Masculino (18 años)</td><td>50.5</td><td>60.0</td><td>73.8</td><td>162.2</td><td>170.6</td><td>178.9</td></tr>
+                                <tr><td>Femenino (18 años)</td><td>46.9</td><td>56.7</td><td>73.1</td><td>149.8</td><td>162.1</td><td>174.4</td></tr>
+                                <tr><td>Masculino (19 años)</td><td>51.8</td><td>60.8</td><td>74.6</td><td>162.2</td><td>170.6</td><td>178.9</td></tr>
+                                <tr><td>Femenino (19 años)</td><td>47.3</td><td>57.1</td><td>73.3</td><td>150.0</td><td>162.2</td><td>174.5</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
